@@ -1,0 +1,405 @@
+.jumbotron {
+  padding-top: 1rem;
+  background-color: #ffffff;
+  border-radius: .1rem;
+}
+
+#projects {
+  background-color: rgb(255, 255, 255);
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+.judul {
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub {
+  font-size: 26px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.teks {
+  font-size: 15px;
+  
+}
+.core {
+  font-size: 25px;
+  margin-left: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.innovation{
+  font-size: 28px;
+}
+.teksinno{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tekskomu{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.vision {
+  margin-left: 10px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.vision2{
+  margin-left: 10px;
+  font-size: 13px;
+  white-space: nowrap;
+
+}
+.bullet-list {
+  margin-left: 15px; /* Sesuaikan jarak dari kiri */
+}
+
+.bullet-list li {
+  margin-bottom: 15px; /* Sesuaikan jarak antar bullet points */
+}
+.mision {
+  margin-left: 10px;
+  font-size: 13px;
+}
+.core2{
+  
+  font-size: 25px;
+}
+
+.values{
+  margin-left: 20px;
+}
+.flex-container {
+  display: flex;
+  align-items: center; /* Mengatur posisi vertikal elemen dalam flex container */
+}
+
+.visionmission2 {
+  font-size: 100px; /* Mengatur jarak antara teks dan gambar */
+}
+
+@media (max-width: 767px) {
+  .flex-container2 {
+      flex-direction: column; /* Mengatur tata letak menjadi vertikal di perangkat dengan lebar maksimum 767px */
+  }
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .visionmission2 {
+      margin-right: 8; /* Menghilangkan margin kanan pada teks di tata letak vertikal */
+  }
+  .values  {
+    flex-direction: column;
+}
+.kiri{
+  flex-direction: column;
+}
+.kanan{
+  flex-direction: column;
+  margin-left: 40%;
+}
+}
+
+.product{
+  font-size: 20px;
+}
+.spesialis{
+  font-size: 25px;
+}
+.gallery{
+  font-size: 20px;
+}
+.galery-text{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container2 {
+  display: flexbox;
+  flex-wrap: nowrap; /* Mencegah wrap ke baris baru */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-md-3 {
+  flex: 1 0 auto; /* Menjadikan lebar fleksibel */
+  margin-right: 20px; /* Memberikan jarak antar elemen */
+}
+
+.map {
+  flex-basis: 200px; /* Lebar tetap untuk peta */
+  margin-top: 20px; /* Memberikan jarak antara baris */
+}
+.animated {
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+      opacity: 1;
+      transform: none;
+  }
+}
+.container {
+  margin-left: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Menyusun artikel ke dalam grid dengan lebar minimum 250px */
+  gap: 20px; /* Memberikan jarak antar artikel */
+  justify-content: center; /* Mengatur agar grid berada di tengah */
+}
+
+article {
+  text-align: center; /* Mengatur teks menjadi ditengah */
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+/* Media query untuk resolusi layar ponsel */
+
+
+/* Media query untuk resolusi layar tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .judul {
+    font-size: 22px; /* Mengubah ukuran judul untuk layar tablet */
+  }
+
+  .sub {
+    font-size: 24px; /* Mengubah ukuran sub judul untuk layar tablet */
+  }
+
+  .teks,
+  .teksinno,
+  .tekskomu {
+    font-size: 14px; /* Mengubah ukuran teks untuk layar tablet */
+  }
+
+  .core {
+    font-size: 24px; /* Mengubah ukuran core values untuk layar tablet */
+  }
+
+  .vision,
+  .vision2,
+  .mision {
+    font-size: 12px; /* Mengubah ukuran visi dan misi untuk layar tablet */
+  }
+
+  .galery-text {
+    font-size: 25px; /* Mengubah ukuran teks galeri untuk layar tablet */
+  }
+  .values {
+    flex-direction: column;
+}
+
+/* Mengatur lebar gambar menjadi 100% agar mengisi lebar kontainer */
+.values{
+    width: 100%;
+}
+
+/* Memberikan jarak antara setiap elemen */
+.values {
+    margin-top: 20px;
+}
+.kanan {
+  margin-top: 20px; /* Tambahkan jarak antara kartu */
+}
+}
+@media (max-width: 800px) {
+  .judul {
+    font-size: 18px; /* Mengubah ukuran judul untuk layar ponsel */
+  }
+
+  .sub {
+    font-size: 20px; /* Mengubah ukuran sub judul untuk layar ponsel */
+  }
+
+
+  .teks,
+  .teksinno,
+  .tekskomu {
+    font-size: 12px; /* Mengubah ukuran teks untuk layar ponsel */
+  }
+
+  .core {
+    font-size: 20px; /* Mengubah ukuran core values untuk layar ponsel */
+  }
+
+  .vision,
+  .vision2,
+  .mision {
+    font-size: 10px; /* Mengubah ukuran visi dan misi untuk layar ponsel */
+  }
+
+  .galery-text {
+    font-size: 15px; /* Mengubah ukuran teks galeri untuk layar ponsel */
+  }
+  .values{
+    flex-direction: column;
+}
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 3fr)); /* Menyusun artikel ke dalam grid dengan lebar minimum 250px */
+  gap: 20px; /* Memberikan jarak antar artikel */
+  
+  margin: 20px;
+  
+}
+.grid2 > article:hover{
+  transform: scale(1.1);
+  transform: (1.2);
+
+}
+.img{
+  object-fit: cover;
+}
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  justify-content: center;
+}
+
+  .grid4 {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Menyusun artikel ke dalam grid dengan lebar minimum 250px */
+    gap: 20px; /* Memberikan jarak antar artikel */
+    justify-content: center; /* Mengatur agar grid berada di tengah */
+  }
+
+  @media (max-width: 768px) {
+    .grid4 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Mengatur menjadi 3 kolom */
+    }
+  }
+  
+  /* Untuk layar dengan lebar kurang dari atau sama dengan 576px */
+  @media (max-width: 576px) {
+    .grid4 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Mengatur menjadi 2 kolom */
+    }
+  }
+  /* Untuk gambar pada baris atas */
+.grid4 .row:first-of-type .card img {
+  transition: transform 0.5s ease; /* Efek transisi agar perubahan ukuran terlihat mulus */
+}
+
+.grid4 .row:first-of-type .card:hover img {
+  transform: scale(1.2); /* Memperbesar gambar saat kursor mengarah ke gambar */
+}
+
+/* Untuk gambar pada baris bawah */
+.grid4 .row:last-of-type .card img {
+  transition: transform 0.5s ease; /* Efek transisi agar perubahan ukuran terlihat mulus */
+}
+
+.grid4 .row:last-of-type .card:hover img {
+  transform: scale(1.2); /* Memperbesar gambar saat kursor mengarah ke gambar */
+}
+
+.card2 {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease; /* Efek transisi saat gambar berubah ukuran */
+}
+
+/* Efek zoom in saat kursor hover */
+.card2:hover .card-img-top {
+  transform: scale(1.1); /* Memperbesar gambar */
+}
+.animate__fadeInUp {
+  --animate-duration: 3s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: var(--animate-duration);
+}
+
+.animate__fadeIn {
+  --animate-duration: 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+  animation-duration: var(--animate-duration);
+}
